@@ -1,0 +1,48 @@
+
+<ion-header class="bg">
+    <ion-navbar>
+      <ion-buttons left>
+        <button ion-button icon-only menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+      </ion-buttons>
+      <ion-buttons right>
+          <button ion-button icon-only (click)="getNotes()">
+            <ion-icon name="refresh"></ion-icon>
+          </button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding class="bg">
+    <accordion *ngFor="let n of notes">
+      <p title> {{n.note_title}} </p>
+      <ion-list>
+        <br>
+        {{n.note_content}}
+        <br>
+      </ion-list>
+      <ion-grid no-lines class="clear">
+          <ion-row col-6>
+            <ion-col col-6>
+              <button color="dark" ion-button clear full (click)="presentConfirm(n.note_id)">
+                <ion-icon md="md-trash" class="icon1"></ion-icon>
+              </button>
+            </ion-col>
+            <ion-col col-6>
+              <button color="dark" ion-button clear full (click)="edit(n)">
+                <ion-icon md="md-create" class="icon2"></ion-icon>
+              </button> 
+            </ion-col>
+          </ion-row>
+      </ion-grid>
+    </accordion> 
+</ion-content>
+
+<ion-footer no-lines>
+  <ion-fab bottom right>
+    <button ion-fab color="secondary" (click)="redirect(1)">
+      <ion-icon md="md-add"></ion-icon>
+    </button>
+  </ion-fab>
+</ion-footer>

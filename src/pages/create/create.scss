@@ -1,0 +1,45 @@
+page-create {
+    ion-header {
+        .toolbar {
+          position: absolute;
+      
+          .toolbar-background {
+            background: transparent;
+          }
+        }
+      }
+
+    .bg{
+        background-image: url(../../assets/imgs/login.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    ion-card-content {
+        background-color: #c4c4c4;
+        color: black;
+        height: 210px;
+    }
+
+    ion-content{
+        margin-top: 10% !important;
+        
+        .btn{
+            margin-bottom: 65% !important;
+        }
+    }
+
+    .clear{
+        background: transparent;
+    }
+
+    
+
+    .item-input-has-focus .label-md[floating], .input-has-focus .label-md[floating]{
+        color: black; //label color when focusing
+    }
+    
+    .item-input .label-md{
+        color: black; //label color
+    }
+}

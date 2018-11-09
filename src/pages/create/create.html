@@ -1,0 +1,36 @@
+
+<ion-header class="bg">
+  <ion-navbar>
+    <ion-buttons left>
+      <button ion-button icon-only (click)="move(1)">
+        <ion-icon md="md-arrow-back"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar> 
+</ion-header>
+
+
+<ion-content padding class="bg">
+    <form [formGroup]="fg" (ngSubmit)="create()"> 
+      <ion-card>
+        <ion-card-header>
+          <ion-input type="text" placeholder="Title" formControlName="note_title"></ion-input>
+        </ion-card-header>
+        
+        <ion-card-content>  
+          <ion-item class="clear">
+            <ion-textarea  rows="10" placeholder="Tap to write the content" name="note" autocomplete="on" autocorrect="on" formControlName="note_content"></ion-textarea>
+          </ion-item>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-fab bottom right>
+        <button ion-fab color="secondary" type="submit" class="btn">
+          <ion-icon md="md-checkmark"></ion-icon>
+        </button>
+      </ion-fab>
+    </form>
+</ion-content>
+
+
+

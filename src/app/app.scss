@@ -1,0 +1,16 @@
+ion-menu{
+    .bgcolor{
+        background-color: #dddddd;
+    }
+    ion-header {
+        .toolbar {
+            position: absolute;
+        
+            .toolbar-background {
+            background: transparent;
+            }
+        }
+    }
+}
+
+

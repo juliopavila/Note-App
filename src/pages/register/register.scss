@@ -1,0 +1,36 @@
+page-register {
+    .bg{
+        background-image: url(../../assets/imgs/login3.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    img{
+        width: 100px;
+        height: 58px;
+    }
+
+    .clear{
+        background: transparent;
+    }
+
+    .register-btn{ 
+        height: 45px !important;
+    }
+
+    button{
+        font-size: 1.5rem !important;
+    }
+    
+    footer{
+        margin-top: 0px !important;
+    }
+
+    .item-input-has-focus .label-md[floating], .input-has-focus .label-md[floating]{
+        color: black; //label color when focusing
+    }
+    
+    .item-input .label-md{
+        color: black; //label color
+    }    
+}

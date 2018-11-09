@@ -1,0 +1,37 @@
+page-dashboard {
+    ion-header {
+        .toolbar {
+          position: absolute;
+      
+          .toolbar-background {
+            background: transparent;
+          }
+        }
+      }
+
+    .bg{
+        background-image: url(../../assets/imgs/login.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    ion-content{
+        margin-top: 10% !important;
+
+        ion-grid{
+            margin-left: 56% !important;
+            .icon1 {
+                font-size: 35px !important;
+                color: #504f4f !important;
+            }
+            .icon2 {
+                font-size: 35px !important;
+                color: #504f4f !important;
+            }
+        }
+    }
+
+    .clear{
+        background: transparent;
+    }
+}

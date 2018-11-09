@@ -1,0 +1,30 @@
+<ion-header>
+</ion-header>
+
+<ion-content padding class="bg">
+
+  <ion-item no-lines text-center>
+      <img  src="../../assets/imgs/logo.png" >
+  </ion-item>
+
+  <form [formGroup]="fg" (ngSubmit)="login()">
+    <ion-item class="clear">
+      <ion-label color="dark" floating>Username</ion-label>
+      <ion-input type="text" value="" formControlName="username"></ion-input>
+    </ion-item>
+
+    <ion-item class="clear">
+      <ion-label color="dark" floating>Password</ion-label>
+      <ion-input type="password" formControlName="password"></ion-input>
+    </ion-item>
+
+    <ion-item no-lines class="clear">
+      <button  color="material" class="login-btn" ion-button round block type="submit">LOGIN</button>
+    </ion-item>
+  </form>
+
+    <ion-item no-lines class="clear signup-btn">
+      <button color="dark" ion-button clear full (click)="redirect(2)">IF YOU DON'T HAVE AN ACCOUNT, SIGN UP</button>
+    </ion-item>
+</ion-content>
+

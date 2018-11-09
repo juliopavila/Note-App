@@ -1,0 +1,31 @@
+page-home {
+    .bg{
+        background-image: url(../../assets/imgs/login2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    img{
+        margin-top: 25%;
+    }
+
+    .clear{
+        background: transparent;
+    }
+
+    .login-btn{ 
+        height: 45px !important;
+    }
+
+    button{
+        font-size: 1.5rem !important;
+    }
+
+    .item-input-has-focus .label-md[floating], .input-has-focus .label-md[floating]{
+        color: black; //label color when focusing
+    }
+    
+    .item-input .label-md{
+        color: black; //label color
+    }
+}
